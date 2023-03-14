@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.hamburger{
+    cursor: pointer;
+}
+
+.nav-link{
+    background-color: aqua;
+    position: fixed;
+    width: 100%;
+    top: 50px;
+    right: 0;
+}
+
+.nav-link a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.hide{
+     display: none;
+}
+
+@media screen and (min-width:600px) {
+    .nav-link{
+        background: none;
+        position: static;
+        display: flex;
+        width: auto;
+    }
+
+    .hamburger{
+        display: none;
+    }
+}
